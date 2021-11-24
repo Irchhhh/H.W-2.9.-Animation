@@ -13,9 +13,12 @@
 		8CCCF235274EB11000F50453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCCF233274EB11000F50453 /* Main.storyboard */; };
 		8CCCF237274EB11500F50453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CCCF236274EB11500F50453 /* Assets.xcassets */; };
 		8CCCF23A274EB11500F50453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCCF238274EB11500F50453 /* LaunchScreen.storyboard */; };
+		8CCCF242274EB70600F50453 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCCF241274EB70600F50453 /* Animations.swift */; };
+		C2FA9A8A5ED12A0F237DB488 /* Pods_H_W_2_9_Animation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EC14BC8C3B0E59758BD27E /* Pods_H_W_2_9_Animation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8271B7ECD10AFE684FB9481B /* Pods-H.W 2.9.Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H.W 2.9.Animation.debug.xcconfig"; path = "Target Support Files/Pods-H.W 2.9.Animation/Pods-H.W 2.9.Animation.debug.xcconfig"; sourceTree = "<group>"; };
 		8CCCF22A274EB11000F50453 /* H.W 2.9.Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H.W 2.9.Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCCF22D274EB11000F50453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CCCF22F274EB11000F50453 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		8CCCF236274EB11500F50453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CCCF239274EB11500F50453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CCCF23B274EB11500F50453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CCCF241274EB70600F50453 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		C9EC14BC8C3B0E59758BD27E /* Pods_H_W_2_9_Animation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H_W_2_9_Animation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A469863309258F0026BA94 /* Pods-H.W 2.9.Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H.W 2.9.Animation.release.xcconfig"; path = "Target Support Files/Pods-H.W 2.9.Animation/Pods-H.W 2.9.Animation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FA9A8A5ED12A0F237DB488 /* Pods_H_W_2_9_Animation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190A3F6A425263BE302F2B4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9EC14BC8C3B0E59758BD27E /* Pods_H_W_2_9_Animation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8CCCF221274EB11000F50453 = {
 			isa = PBXGroup;
 			children = (
 				8CCCF22C274EB11000F50453 /* H.W 2.9.Animation */,
 				8CCCF22B274EB11000F50453 /* Products */,
+				A39C2C54D905C5E51EF3E6F2 /* Pods */,
+				190A3F6A425263BE302F2B4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,57 @@
 		8CCCF22C274EB11000F50453 /* H.W 2.9.Animation */ = {
 			isa = PBXGroup;
 			children = (
-				8CCCF22D274EB11000F50453 /* AppDelegate.swift */,
-				8CCCF22F274EB11000F50453 /* SceneDelegate.swift */,
-				8CCCF231274EB11000F50453 /* ViewController.swift */,
-				8CCCF233274EB11000F50453 /* Main.storyboard */,
-				8CCCF236274EB11500F50453 /* Assets.xcassets */,
-				8CCCF238274EB11500F50453 /* LaunchScreen.storyboard */,
+				8CCCF245274EB82F00F50453 /* ViewControllers */,
+				8CCCF243274EB81300F50453 /* Models */,
+				8CCCF244274EB82000F50453 /* StoryBoards */,
 				8CCCF23B274EB11500F50453 /* Info.plist */,
 			);
 			path = "H.W 2.9.Animation";
+			sourceTree = "<group>";
+		};
+		8CCCF243274EB81300F50453 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CCCF241274EB70600F50453 /* Animations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CCCF244274EB82000F50453 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8CCCF238274EB11500F50453 /* LaunchScreen.storyboard */,
+				8CCCF233274EB11000F50453 /* Main.storyboard */,
+				8CCCF236274EB11500F50453 /* Assets.xcassets */,
+				8CCCF246274EB83E00F50453 /* Delegates */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		8CCCF245274EB82F00F50453 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CCCF231274EB11000F50453 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CCCF246274EB83E00F50453 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8CCCF22D274EB11000F50453 /* AppDelegate.swift */,
+				8CCCF22F274EB11000F50453 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		A39C2C54D905C5E51EF3E6F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8271B7ECD10AFE684FB9481B /* Pods-H.W 2.9.Animation.debug.xcconfig */,
+				F6A469863309258F0026BA94 /* Pods-H.W 2.9.Animation.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CCCF23E274EB11500F50453 /* Build configuration list for PBXNativeTarget "H.W 2.9.Animation" */;
 			buildPhases = (
+				B544E47FC07C7A99406BB36B /* [CP] Check Pods Manifest.lock */,
 				8CCCF226274EB11000F50453 /* Sources */,
 				8CCCF227274EB11000F50453 /* Frameworks */,
 				8CCCF228274EB11000F50453 /* Resources */,
+				792854A5C40DA4AC8D0F4AB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +194,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		792854A5C40DA4AC8D0F4AB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-H.W 2.9.Animation/Pods-H.W 2.9.Animation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-H.W 2.9.Animation/Pods-H.W 2.9.Animation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-H.W 2.9.Animation/Pods-H.W 2.9.Animation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B544E47FC07C7A99406BB36B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H.W 2.9.Animation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CCCF226274EB11000F50453 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +243,7 @@
 			files = (
 				8CCCF232274EB11000F50453 /* ViewController.swift in Sources */,
 				8CCCF22E274EB11000F50453 /* AppDelegate.swift in Sources */,
+				8CCCF242274EB70600F50453 /* Animations.swift in Sources */,
 				8CCCF230274EB11000F50453 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +388,7 @@
 		};
 		8CCCF23F274EB11500F50453 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8271B7ECD10AFE684FB9481B /* Pods-H.W 2.9.Animation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +400,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,12 +412,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8CCCF240274EB11500F50453 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A469863309258F0026BA94 /* Pods-H.W 2.9.Animation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +430,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +442,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
