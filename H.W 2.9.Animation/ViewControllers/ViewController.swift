@@ -24,9 +24,11 @@ class ViewController: UIViewController {
   
     // MARK: - IB Actions
     @IBAction func buttonSpring(_ sender: SpringButton) {
+        animation = Animation(random: true)
         animationView()
         runButton.setTitle("\(animation.preset.rawValue)", for: .normal)
         infoLabelI()
+
     }
     //MARK: - Private Metods
     private func animationView() {

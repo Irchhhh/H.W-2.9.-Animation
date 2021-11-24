@@ -6,6 +6,7 @@
 //
 
 import Spring
+import CoreGraphics
 
 struct Animation {
     enum Presets: String, CaseIterable {
@@ -90,16 +91,16 @@ struct Animation {
     
     let preset: Presets
     let curve: Curve
-    let force: Double
-    let duration: Double
-    let delay: Double
+    let force: CGFloat
+    let duration: CGFloat
+    let delay: CGFloat
     
     init(random _: Bool?) {
         preset = Presets.random()
         curve = Curve.random()
-        force = Double.random(in: 1...2)
-        duration = Double.random(in: 1...2)
-        delay = Double.random(in: 0...1)
+        force = CGFloat.random(in: 1...2)
+        duration = CGFloat.random(in: 1...2)
+        delay = CGFloat.random(in: 0...1)
     }
 }
 
